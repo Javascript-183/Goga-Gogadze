@@ -1,0 +1,35 @@
+<html>
+
+<head></head>
+
+<body>
+    <script>
+        const color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
+        const o = ["th", "st", "nd", "rd"];
+        let result = Array.isArray(color);
+        let first_element = color[0];
+        let last_element = color.slice(-1);
+        console.log(result);
+        console.log(first_element);
+        console.log(last_element);
+        console.log(`1${o[1]} choice is ${color[0]}`)
+        console.log(`2${o[2]} choice is ${color[1]}`)
+        console.log(`3${o[3]} choice is ${color[2]}`)
+        let student = {
+            firstName: "Goga",
+            lastName: "Gogadze",
+            age: 36,
+            languages: {
+                HTML: 5,
+                CSS: 5,
+                JAVASCRIPT: 1,
+            },
+        }
+        student.profession = 'Developer';
+        delete student.languages;
+        student["profession"] = 'Front-End Developer'
+        console.log(student); 
+    </script>
+</body>
+
+</html>
